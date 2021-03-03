@@ -62,7 +62,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npx webpack serve
+          start: npm start
           config-file: cypress.json
 
   lint:
