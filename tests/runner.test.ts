@@ -264,12 +264,12 @@ f(2)`,
   assert(
     "while true",
     `
-  x : int = 3
-  fib : int = 1
-  while x > 1:
-    fib = fib * x
-    x = x - 1
-  fib`,
+x : int = 3
+fib : int = 1
+while x > 1:
+  fib = fib * x
+  x = x - 1
+fib`,
     PyInt(6)
   );
 

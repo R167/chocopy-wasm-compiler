@@ -695,6 +695,6 @@ export function traverse(c: TreeCursor, s: string): Program<null> {
   }
 }
 export function parse(source: string): Program<null> {
-  const t = parser.parse(source);
+  const t = parser.configure({ strict: true }).parse(source);
   return traverse(t.cursor(), source);
 }
